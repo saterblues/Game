@@ -6,7 +6,7 @@ using Game.Component;
 
 namespace Game.System.Data
 {
-    public class BagSystem : ISystem
+    public class EntityGroupSystem : ISystem
     {
         public override IComponent CreateComponent(Entity entity, params object[] args)
         {

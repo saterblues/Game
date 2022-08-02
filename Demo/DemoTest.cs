@@ -18,7 +18,7 @@ namespace Game.Demo
                 .RegistSystem<NameSystem>()
                 .RegistSystem<PowerSystem>()
                 .RegistSystem<AgilitySystem>()
-                .RegistSystem<BagSystem>()
+                .RegistSystem<EntityGroupSystem>()
                 .RegistSystem<CardSystem>()
                 .RegistSystem<HealthSystem>()
                 .RegistSystem<IntelligenceSystem>()
@@ -42,10 +42,10 @@ namespace Game.Demo
             thing2.RegistToSystem<NameSystem>("卡牌三");
             thing3.RegistToSystem<NameSystem>("卡牌四");
 
-            bag.RegistToSystem<BagSystem>(thing0,thing1,thing2,thing3);
+            bag.RegistToSystem<EntityGroupSystem>(thing0,thing1,thing2,thing3);
 
-            bag.GetSystem<BagSystem>().PopFirst(bag);
-            var entities = bag.GetSystem<BagSystem>().PopLastRange(bag,2);
+            bag.GetSystem<EntityGroupSystem>().PopFirst(bag);
+            var entities = bag.GetSystem<EntityGroupSystem>().PopLastRange(bag,2);
 
             e1.RegistToSystem<PlayerSystem>()
                 .RegistToSystem<NameSystem>("壹号玩家")
