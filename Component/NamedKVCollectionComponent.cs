@@ -20,7 +20,8 @@ namespace Game.Component
     /// V : 值 一般为Float
     /// 建议V不要使用复合类型，容易出现理解困难
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public struct NamedKVCollectionComponent<K,V> : IComponent
     {
         public NamedKVCollectionComponent(string name, Dictionary<K, V> kv)
