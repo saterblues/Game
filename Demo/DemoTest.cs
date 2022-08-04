@@ -26,7 +26,9 @@ namespace Game.Demo
                 .RegistSystem<StrengthSystem>()
                 .RegistSystem<PlayerSystem>()
                 .RegistSystem<PowerSystem>()
-                .RegistSystem<UISystem>();
+                .RegistSystem<UISystem>()
+                .RegistSystem<NamedEntityFloatCollectionSystem>();
+             
 
             Entity e1 = world.CreateEntity();
             Entity e2 = world.CreateEntity();

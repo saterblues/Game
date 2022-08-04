@@ -45,6 +45,7 @@
     <Compile Include="Component\CardComponent.cs" />
     <Compile Include="Component\EntityGroupComponent.cs" />
     <Compile Include="Component\IComponent.cs" />
+    <Compile Include="Component\NamedKVCollectionComponent.cs" />
     <Compile Include="Component\RoundComponent.cs" />
     <Compile Include="Component\SingleComponent.cs" />
     <Compile Include="CsharpExtension\ICollectionExtension.cs" />
@@ -58,6 +59,7 @@
     <Compile Include="System\Data\CardSystem.cs" />
     <Compile Include="System\Data\HealthSystem.cs" />
     <Compile Include="System\Data\IntelligenceSystem.cs" />
+    <Compile Include="System\Data\NamedEntityFloatCollectionSystem.cs" />
     <Compile Include="System\Data\RoundSystem.cs" />
     <Compile Include="System\ISystem.cs" />
     <Compile Include="System\Data\ManaSystem.cs" />
