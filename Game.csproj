@@ -54,11 +54,9 @@
     <Compile Include="Entity\EntityExtension.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="System\Data\AgilitySystem.cs" />
     <Compile Include="System\Data\EntityGroupSystem.cs" />
     <Compile Include="System\Data\CardSystem.cs" />
     <Compile Include="System\Data\HealthSystem.cs" />
-    <Compile Include="System\Data\IntelligenceSystem.cs" />
     <Compile Include="System\Data\NamedEntityFloatCollectionSystem.cs" />
     <Compile Include="System\Data\RoundSystem.cs" />
     <Compile Include="System\ISystem.cs" />
@@ -66,7 +64,6 @@
     <Compile Include="System\Data\NameSystem.cs" />
     <Compile Include="System\Data\PlayerSystem.cs" />
     <Compile Include="System\Logic\PowerSystem.cs" />
-    <Compile Include="System\Data\StrengthSystem.cs" />
     <Compile Include="System\Logic\UISystem.cs" />
     <Compile Include="Util\RoundQueue.cs" />
     <Compile Include="World\World.cs" />

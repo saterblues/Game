@@ -11,7 +11,6 @@ namespace Game.Component
     /// </summary>
     public struct CardComponent : IComponent
     {
-
         public CardComponent(Action<Entity,Entity> action, float cost) {
             this.action = action;
             this.manaCost = cost;
