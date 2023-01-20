@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-using Game.System;
-
-namespace Game.AttributeExtension
+namespace Game.System.AttributeExtension
 {
     /// <summary>
     /// 用于表示依赖的系统,World在注册有此Attibute类时,会将其依赖的系统也一并进行注册
@@ -14,7 +8,6 @@ namespace Game.AttributeExtension
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     public class RequireSystemAttribute : Attribute
     {
-        
         public RequireSystemAttribute(Type type) {
 
             if (false == type.IsSubclassOf(typeof(ISystem)))

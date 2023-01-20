@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttributeExtension\RequireSystem.cs" />
+    <Compile Include="System\AttributeExtension\RequireSystem.cs" />
     <Compile Include="Component\CardComponent.cs" />
     <Compile Include="Component\EntityGroupComponent.cs" />
     <Compile Include="Component\IComponent.cs" />

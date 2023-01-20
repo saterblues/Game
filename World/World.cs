@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Game.System;
-using Game.AttributeExtension;
+using Game.System.AttributeExtension;
 
 namespace Game.World
 {

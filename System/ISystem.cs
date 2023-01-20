@@ -12,7 +12,6 @@ namespace Game.System
         public struct RegistInfo {
             public Entity entity;
             public object[] args;
-
             public RegistInfo(Entity entity, object[] args)
             {
                 this.entity = entity;
@@ -40,18 +39,12 @@ namespace Game.System
             }
         }
 
-        public virtual IComponent GetComponent(Entity entity)
+        public virtual T GetComponent<T>(Entity entity) where T : IComponent
         {
             IfNotFoundThrowException(entity);
             IComponent com;
             _components.TryGetValue(entity, out com);
-            return com;
-        }
-
-        public virtual T GetComponent<T>(Entity entity) where T : IComponent
-        {
-            IfNotFoundThrowException(entity);
-            return (T)GetComponent(entity) ;
+            return (T)com;
         }
 
         public virtual IEnumerable<Entity> GetEntities() {
