@@ -1,7 +1,7 @@
 ﻿using System;
 using Game.System.Data;
 using Game.Component;
-using Game.AttributeExtension;
+using Game.System.AttributeExtension;
 
 namespace Game.System.Logic
 {
