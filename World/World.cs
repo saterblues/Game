@@ -98,14 +98,34 @@ namespace Game.World
             return default(T);
         }
 
-        public Entity CreateEntity()
-        {
-            Entity entity = new Entity();
-            _entities.Add(entity);
+        private Entity AddEntityToWorld(Entity entity) {
+
+            if (false == _entities.Add(entity)) {
+                if (_entities.Contains(entity))
+                {
+                    throw new InvalidOperationException(string.Format("Entity [{0}] allready exist! ", entity.Uid));
+                }
+                else 
+                {
+                    throw new Exception(string.Format("Add Entity [{0}] failed!",entity.Uid));
+                }
+            }
 
             OnEntityCreated.Invoke(this, entity);
 
             return entity;
+        }
+
+        public Entity CreateEntity()
+        {
+            Entity entity = new Entity();
+            return AddEntityToWorld(entity);
+        }
+
+        public Entity CreateEntity(Guid guid) 
+        {
+            Entity entity = new Entity(guid);
+            return AddEntityToWorld(entity);
         }
 
         public void DestroyEntity(Entity entity)
